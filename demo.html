@@ -1,0 +1,45 @@
+ 
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <div>
+        <ul id="new"> </ul>
+    </div> 
+ <script>
+ const mybtn = document.getElementById('btn')
+ const mylist = document.getElementById('list')
+
+ mybtn.addEventListener( "click",function (){
+    mylist.classList.toggle('hidden')
+    mylist.style.backgroundColor = "red"
+ }) 
+
+
+</script>  
+
+<script>
+     const new_1 = document.getElementById('new')
+     number = [10,39,345,89];
+     for (i=0; i< number.length; i++){
+         const li = document.createElement("li");
+         li.textContent = `hello -${number[i]}`;
+         new_1.appendChild(li);}
+    
+    const new_2 = document.getElementById('new');
+
+    number = [10,39,345,89];
+    for (i in number){
+        const li = document.createElement("li");
+        li.textContent = `hello -${number[i]}`;
+        new_2.appendChild(li);
+    }
+ 
+</script>
+</body>
+ </html>

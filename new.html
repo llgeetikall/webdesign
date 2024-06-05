@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+    body {
+        box-sizing: border-box;
+        max-height: 100vh;
+        background-image: url(3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 0;
+        padding: 0;
+        font-family: "Libre Baskerville", serif;
+    }
+
+    .card {
+        border: 1px solid gainsboro;
+        width: 300px;
+        height: 60vh;
+        background-color: transparent;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        justify-content: center;
+        margin-left: 450px;
+        margin-top: 100px;
+        color: white;
+
+
+    }
+    .card:hover{
+        /* transition:  0.3s ease-in-out; */
+        box-shadow: 0 6px 10px 0 rgba(255, 255, 255, 0.4);
+     
+    }
+
+    .card h2 {
+        font-size: 30px;
+        font-weight: 400;
+        font-family: "Libre Baskerville", serif;
+    }
+    .card input{
+        border: 1px solid black;
+        outline: 0px;
+       background:transparent;
+       color: white;
+        margin-bottom: 14px;
+        border-radius: 30px;
+        padding: 6px;
+
+        
+    }
+    .card .forget{
+        margin-top: -5px;
+        margin-left: -83px;
+        font-size: 15px;
+    }
+    .card .forget:hover{
+        color:black;
+        font-size: 17px;
+    }
+    .login{
+        border: 1px solid black;
+        outline: 0px;
+       background: whitesmoke;
+       color: black;
+       padding-top: 5px;
+       padding-bottom: 5px;
+       padding-left: 29px;
+       padding-right: 29px;
+       border-radius: 33px;
+       font-size: 18px;
+       
+    }
+    .login:hover{
+        background: black;
+        color: white;
+        border-radius: 30px;
+    }
+    .with{
+        font-size: 20px;
+        font-weight: 400;
+        font-family: "Libre Baskerville", serif;
+        text-decoration: underline;
+    }
+    .face .insta{
+        border: 1px solid black;
+        color:black;
+        background:transparent;
+        outline: 0px;
+
+    }
+    .account{
+        font-size: 15px;
+    }
+    .account a{
+        text-decoration: none;
+        color: black;
+        font-size: 19px;
+        text-transform: capitalize;
+    }
+    a:hover{
+       text-shadow: 4px 2px 5px #ffffff;
+    }
+    
+</style>
+
+<body>
+<FORM class="myform">
+    <div class="card">
+        <h2>Login form </h2>
+        <input type="text" size="26px" placeholder="email or phone">
+        <input type="text" size="26px" placeholder="password " id="password">
+        <p id="error-message" style= "color:red "></p>
+        <p class="forget">forget password?</p>
+        <button class="login">login </button>
+        <p class="with">or login with</p>
+        <button class="face">facebook</button>
+        <button class="insta">instagram</button>
+        <p class="account">don't have account ? <a href=""> signup now</a></p>
+    </div>
+</FORM>
+<script>
+    const form = document.getElementById('myform')
+    form.addEventListener("submit",function(event){
+        event.preventDefault()
+        const error = document.getElementById('error-message')
+    const pass = document.getElementById('password').value;
+    if(password.length < 8){
+        alert('your password is to short,make it untill 8 digits')
+    }
+})
+
+</script>
+</body>
+
+</html>
